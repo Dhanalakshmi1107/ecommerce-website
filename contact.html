@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav class="nav nav_top">
+    <div class="logo">
+      <a href="eccomerce1.html"><img src="logo.png" width="70"></a>
+    </div>
+    <a href="#" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+    </a>
+    <div class="nav_side">
+      <a href="eccomerce1.html">HOME</a>
+      <a href="about.html">ABOUT US</a>
+      <a href="service.html">SERVICES</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="signup.html">SIGN UP</a>
+      <a href="login.html">LOGIN</a>
+    </div>
+  </nav>
+
+      <div class="contact_container">
+          <h2>CONTACT US ON</h2>
+          <div class="g_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14197.602247811197!2d78.03338742876994!3d27.175144528242633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1649527662527!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="contact_content">
+              <p><b>ADDRESS : ABC COLONY , INDIA</b></p>
+              <p><b>CALL : +91 XXXXXXXXXX</b></p>
+              <p><b>MAIL :abc@gmai.com</b></p>
+          </div>
+      </div>
+
+      <div class="feed">
+        <h2>WRITE YOUR REVIEWS</h2>
+        <div class="feed_form">
+          <form name="feedback" method="post">
+            <input type="text" name="Name" placeholder="Name"><br>
+            <input type="email" name="Email" placeholder="abc@gmail.com"><br>
+            <input type="number" name="Number" placeholder="Contact Number"><br>
+            <textarea rows="6" cols="8" name="Review" placeholder="write your review"></textarea><br>
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <div class="footer_logo">
+        <a href="ecommerce1.html"><img src="logo.png" width="150px"></a> 
+        </div>
+        <div class="pages">
+          <h3>PAGES</h3>
+          <a href="eccomerce1.html">HOME</a>|
+          <a href="about.html">ABOUT US</a>|
+          <a href="signup.html">SIGN UP</a>|
+          <a href="login.html">LOGIN</a>
+          <a href="service.html">SERVICE</a>
+        </div>
+        <div class="doc">
+          <h3>DOCUMENTS</h3>
+          <a href="tandc.html">PRIVACY POLICY</a>|
+          <a href="tandc.html">TERMS AND CONDITIONS</a>|
+          <a href="tandc.html">REFUND POLICY</a>
+        </div>
+        <div class="social">
+          <h3>FOLLOW US ON</h3>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/signup" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/"  target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="contact">
+          <h3>CONTACT US</h3>
+          <a href="https://api.WhatsApp.com/send?phone= +91" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          <a href="tel: "><i class="fa fa-phone" aria-hidden="true"></i></a>
+          <a href="mailto: dhanalakshmi.sat@gmail.com" target=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+        <hr>
+        <p>copyright &copy; 2021.All rights reserved</p>
+      </footer>
+
+      <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzQecxcYcsV1y8rJOgSBIzQPOEG_K6txAFN6LU-jaIwYyA-Le6cX5dm0goZ9g64b9IH/exec'
+        const form = document.forms['feedback']
+     
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert(
+                    "Thank you for your valuable feedback!!! Visit us again!!!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+     
+     </script>
+             
+</body>
+</html>

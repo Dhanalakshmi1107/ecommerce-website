@@ -1,0 +1,834 @@
+*{
+    box-sizing: border-box;
+}
+.nav{
+background-color: black;
+z-index: 9;
+display: flex;
+box-shadow: 0px 3px 65px 0px rgb(182, 179, 179);
+justify-content: center;
+align-items: center;
+color: white;
+}
+.nav_top{
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+}
+.logo{
+margin-left:10px;
+float: left;
+width: 60%;
+}
+.logo img{
+padding: 10px;
+margin: 10px;
+}
+.nav_side{
+margin: 0;
+padding: 0;
+display: flex;
+}
+.nav_side a{
+text-decoration: none;
+margin-right:0 ;
+color: white;
+font-weight: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 15px;
+justify-content: center;
+align-items: center;
+align-content: center;
+text-align: center;
+padding: 10px;
+display: block;
+}
+.nav_side a:hover{
+color:#FAC457;
+text-decoration: underline;
+transition: all 1s ease;
+}    
+.toggle-button{
+position: absolute;
+top:22px ;
+right: 30px;
+display: none;
+flex-direction: column;
+justify-content:space-between ;
+width: 40px;
+height: 30px;
+}
+.toggle-button .bar{
+height: 5px;
+width: 100%;
+background-color: white;
+border-radius: 10px;
+}
+@media(max-width:780px){
+nav{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.toggle-button{
+    display: flex;
+}
+
+.nav_side{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav_side a{
+    width: 100%;
+   flex-direction: column; 
+   text-align: center;
+   padding: 15px 15px;
+   display: flex;
+}
+.nav_side:active{
+    display: flex;
+} 
+.logo{
+margin-left:-180px;
+} 
+
+}
+
+.main{
+    background-image: url(bgimg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 3%;
+    height: 888px;
+}
+.main_content{
+    padding-top: 60px;
+    margin-left: 30px;
+    margin-right: 10%;
+    height: 75vh;
+}
+.main .main_content h1{
+    color: white;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: left;
+}
+.main .main_content h1 span{
+    font-size: 18px;
+    opacity: 0.8;
+    font-weight: 400;
+    line-height: 3px;
+    color: #FAC457;
+    line-height: 5px;
+}
+.main .main_content h1 span:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #FAC457 ;
+    opacity: 1;
+    font-weight: bolder;
+}
+.main .main_content .btn{ 
+    margin-top: 30px;
+}
+.main .main_content .btn a{
+    text-decoration: none;
+    margin: 30px;
+    padding: 10px 20px;
+    background-color:#F88E22 ;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    border: 2px solid #FAC457 ;
+    border-radius: 10px;
+    transition: 5s;
+}
+.main .main_content .btn a:hover{
+    background-color: black;
+    color:white;
+    border: none;
+    border-bottom: 5px solid  #FAC457 ;
+    transition: 0.6s;
+}
+
+
+.product{
+    padding-bottom: 30px;
+}
+.product h2{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.product .product_container{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.product .product_container .item{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    height: 480px;
+}
+.product .product_container .item:hover{
+    box-shadow: 0px 3px 65px 0px rgb(0,0,0,.15);
+}
+.product .product_container .item .item_img{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.product .product_container .item .item_img img{
+    width: 100%;
+    height: 250px;
+}
+.product .product_container .item .item_content{
+    text-align: center;
+}
+.product .product_container .item .item_content h3{
+    padding: 10px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.product .product_container .item .item_content p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.product .product_container .item .item_content a{
+    text-decoration: none;
+    margin: 30px;
+    padding: 10px 20px;
+    background-color:#F88E22 ;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    border: 2px solid #FAC457 ;
+    border-radius: 10px;
+    transition: 5s;
+}
+.product .product_container .item .item_content a:hover{
+    background-color: black;
+    color:white;
+    border: none;
+    border-bottom: 5px solid  #FAC457 ;
+    transition: 0.6s;
+}
+.product .product_btn{
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    margin-left: 10px;
+}
+.product .product_btn a{
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color:#F88E22 ;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    border: 2px solid #FAC457 ;
+    border-radius: 10px;
+    transition: 5s;
+}
+.product .product_btn a:hover{
+    background-color: black;
+    color:white;
+    border: none;
+    border-bottom: 5px solid  #FAC457 ;
+    transition: 0.6s;
+} 
+
+.keypoint{
+    padding: 20px;
+    width: 100%;
+}
+.keypoint h2{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.keypoint .key_container{
+    width: 100%;
+}
+.keypoint .key_container .key_content{
+    width: 100%;
+    padding: 20px;
+}
+.keypoint .key_container .key_content li{
+    list-style: none;
+    margin: 10px;
+    padding:10px;
+    border-left: 2px solid #FAC457;
+    color: black;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.keypoint .key_container .key_img{
+    width: 100%;
+    margin-left: 22px;
+}
+.keypoint .key_container .key_img img{
+    width: 100%;
+    height: 60%;
+    margin-top: 30px;
+}
+
+@media only screen and (min-width:768px){
+    .main .main_content h1{
+        font-size: 60px;
+    }
+    .main .main_content h1 span{
+        font-size: 35px;
+    }
+    .main .main_content .btn{
+    margin-top: 30px;
+    margin-left: 150px;
+    font-size: 20px;
+    }
+          
+    .keypoint{
+    padding: 30px;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .keypoint h2{
+    padding: 20px 0px 0px;
+}
+
+.keypoint .key_container .key_content li{
+    padding:20px 0px 0px;
+}
+.keypoint .key_container .key_img{
+    padding-top: 30px;
+}
+.team .team_container .team_content p{
+    font-size: 25px;
+    }
+
+    .feed .feed_form form input{
+        width: 40%;
+        }
+        .feed .feed_form form textarea{
+            width: 40%;
+        }
+        .feed .feed_form form button{
+            margin-left: 27px;
+        } 
+    }     
+
+@media only screen and (min-width:1000px){
+    .main .main_content .btn{
+        margin-left: 150px;
+        font-size: 30px;
+    }
+    .main .main_content h1{
+        margin-top: 20pxpx;
+            font-size: 65px;
+        }
+        .main .main_content h1 span{
+            font-size: 40px;
+        }
+    
+    .product .product_container {
+        display: flex;
+        flex-direction: row;
+    }
+    .product .product_container .item{
+    width: 33.3%;
+    padding: 20px;
+}
+
+.product .product_btn{
+    margin-top: 40px;
+    margin-left: -2px;
+}
+    
+    .keypoint{
+    width: 1000px;
+  }
+  .keypoint .key_container{
+      width: 1000px;
+  }
+  .keypoint .key_container .key_content{
+    width: 45%;
+    float: left;
+    margin-right: -100px;
+    margin-top: 50px;
+ }
+ .keypoint .key_container .key_content li{
+    padding:0px 10px 0px 0px;
+    font-size: 20px;
+}
+ .keypoint .key_container .key_img {
+    padding-top: 0px;
+    width: 45%;
+    float: right;
+}
+.testi h2{
+    margin-top: 350px;
+}
+.team .team_container{
+    display: flex;
+}
+.team .team_container .team_video{
+    width: 55%;
+    padding: 5%;
+    margin-top: 100px;
+}
+.team .team_container .team_content{
+    width: 45%;
+    padding: 5%;
+    margin-left: 2px;
+    font-size: 18px;
+}
+.feed .feed_form form input{
+    width: 30%;
+    }
+.feed .feed_form form textarea{
+        width: 25%;
+    }
+.feed .feed_form form button{
+    margin-left: 28px;
+} 
+}
+
+.testi{
+    padding:20px;
+}
+.testi h2{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.testi .testi_container{
+    margin-right: 10%;
+    margin-left:10%;
+    text-align: center;
+    margin-top: 80px;
+}
+.testi .testi_container .carousel-inner{
+    background-color: black;
+    box-shadow: none;
+}
+.testi .testi_container .item{
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    box-shadow: none;
+}
+.testi .testi_container .item .item_img{
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    overflow: hidden;
+}
+.testi .testi_container .item .item_img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 80px;
+}
+.testi .testi_container .item .item_content{
+    text-align: center;
+}
+.testi .testi_container .item .item_content h3{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.testi .testi_container .item .item_content p{
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ 
+.team{
+    padding: 30px;
+}
+.team h2{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+ .team .team_container{
+    width: 100%;
+}
+.team .team_container .team_video{
+    width: 100%;
+    padding: 2%;
+}
+ .team .team_container .team_video iframe{
+    width: 100%;
+    height: 300px;
+    border: 5px solid #FAC457;
+    outline: none;
+}
+.team .team_container .team_content{
+    width: 100%;
+    padding: 2%;
+    margin-left: 2px;
+}
+.team .team_container .team_content p{
+    color: black;
+    padding: 5px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.feed{
+    background-image: url(bgimag1.png);
+    background-size: cover;
+}
+.feed h2{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+.feed .feed_form{
+    text-align: left;
+}
+.feed .feed_form form{
+    padding: 20px;
+    margin-left: 90px;
+
+}
+.feed .feed_form form input{
+    width: 40%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+.feed .feed_form form textarea{
+    width: 40%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+.feed .feed_form form button{
+    width: 37%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    background-color:#F88E22 ;
+    color: white;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.feed .feed_form form button:hover{
+    background-color: black;
+    color:white;
+    border: none;
+    border-bottom: 5px solid  #FAC457 ;
+    transition: 0.6s;
+}   
+
+.about_us{
+    padding: 100px;
+}
+.about_us h2{
+    color: #F88E22;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+.about_us p{
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 25px;
+}  
+
+.contact_container{
+    padding: 100px;
+}
+.contact_container h2{
+    color: #F88E22;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+.contact_container .g_map{
+border: 5px solid black;
+}
+.contact_container .contact_content{
+    padding: 20px;
+}
+.contact_container .contact_content p{
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 25px; 
+}
+
+footer{
+    background-color: #F0A85E ;
+    padding: 30px;
+    }
+    footer .pages{
+        text-align: center;
+    }
+    footer .pages h3{
+        color: white;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 5px;
+    }
+    footer .pages a{
+        text-decoration: none;
+        margin: 10px;
+        color: white;
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    footer .pages a:hover{
+        color: white;
+        opacity: 1;
+        background-color: black;
+    }
+    footer .doc{
+        text-align: center;
+    }
+    footer .doc h3{
+        color: white;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 5px;
+    }
+    footer .doc a{
+        text-decoration: none;
+        margin: 10px;
+        color: white;
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    footer .doc a:hover{
+        color: white;
+        opacity: 1;
+        background-color: black;
+    }
+    footer .social{
+        text-align: center;
+    }
+    footer .social h3{
+        color: white;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 5px;
+    }
+    footer .social a{
+        font-size: 20px;
+        color: white;
+        margin: 10px;
+        text-decoration: none;
+    }
+    footer .social a:hover{
+        color: white;
+        opacity: 1;
+        background-color: black;
+    
+    } 
+    footer .contact{
+        text-align: center;
+    }
+    footer .contact h3{
+        color: white;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 5px;
+    }
+    footer .contact a{
+        font-size: 20px;
+        color: white;
+        margin: 10px;
+        text-decoration: none;
+    }
+    footer .contact a:hover{
+        color: white;
+        opacity: 1;
+        background-color: black;
+    
+    }
+
+    .container {
+        padding: 20px;
+        background-color: white;
+      }
+      
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+      }
+      
+      input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      
+      hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 10px;
+      }
+      
+      button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
+      
+      button:hover {
+        opacity:1;
+      }
+      
+      .cancelbtn {
+        padding: 14px 20px;
+        background-color: #f44336;
+        width: 100%;
+        margin-left: 80px;
+        text-align: center;
+        align-items: center;
+      }
+      
+       .signupbtn {
+        width: 100%;
+      }
+      
+      a {
+        color: dodgerblue;
+      }
+      
+      .signin {
+        background-color: #f1f1f1;
+        padding-bottom: 10px;
+        text-align: center;
+        bottom: 50%;
+      }
+      
+      .signin {
+        background-color: #f1f1f1;
+        padding-bottom: 10px;
+        text-align: center;
+        bottom: 50%;
+      }
+      @media only screen and (min-width:768px){
+      .container{
+          margin-left: 130px;
+          width: 500px;
+      }
+      }
+      
+      @media only screen and (min-width:1000px){
+      .container{
+          margin-left: 500px;
+          width: 500px;
+      }
+      }
+
+      body .login {font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        background-color: #F0A85E ;
+      }
+      .login form {border: 3px solid #f1f1f1;
+        height: 640px;
+      width: 499px;
+      margin: 3% auto 5px auto;/* 1% from the top, 1px from the bottom and centered */
+      background-color: azure;
+      }
+      
+      .login input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      
+      .login button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      .login button:hover {
+        opacity: 0.8;
+      }
+      
+      .cancelbtn {
+        width: 300px;
+        padding: 10px 60px;
+        background-color: #f44336;
+        margin-left:80px;
+      }
+      
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+      }
+      
+      img.avatar {
+        width: 30%;
+        border-radius: 50%;
+      }
+      
+      .login .container {
+        padding: 20px;
+      }
+      
+      .login span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+      
+      
+      @media screen and (max-width: 300px) {
+      
+        .cancelbtn {
+           width: 100%;
+        }
+    }
